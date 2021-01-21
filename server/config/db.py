@@ -1,6 +1,7 @@
 from mongoengine import connect
-MONGO_DBNAME = process.env.MONGO_ATLAS_NAME
-MONGO_HOST = process.env.MONGO_ATLAS_CONNECTION
+import os
+MONGO_DBNAME = os.environ.get('MONGO_ATLAS_NAME') 
+MONGO_HOST = os.environ.get('MONGO_ATLAS_CONNECTION')
 # MONGO_PORT = 27017
 
 
