@@ -1,1 +1,1 @@
-web: gunicorn run:appTrasporti
+web: gunicorn app:appTrasporti
